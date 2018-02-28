@@ -1,5 +1,7 @@
 package com.husrevsgame.States;
 
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+
 import java.util.Stack;
 
 /**
@@ -16,9 +18,9 @@ public class StateManager
 
     }
 
-    public void render()
+    public void render(SpriteBatch sb)
     {
-        states.peek().render();
+        states.peek().render(sb);
     }
 
     public void update()
